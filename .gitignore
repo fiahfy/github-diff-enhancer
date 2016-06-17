@@ -1,0 +1,8 @@
+!.gitkeep
+.idea
+.DS_Store
+.tmp/
+node_modules/
+app/libs/
+dist/
+dist.zip
