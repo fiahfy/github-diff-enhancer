@@ -1,53 +1,26 @@
-chrome-extension-angular-skeleton
+Github Diff Enhancer
 ===========
 
-This project is an application skeleton for chrome extension using AngularJS.
+This application is Chrome Extension for enhancing diff code pages on GitHub.
 
-Getting Started
----------
+Version
+-----
+1.0.0
 
-###Clone project
+Feature
+-----
+* Attach the dropmenu for switching whitespace ignored or not.
+* Attach links for adding comment if whitespaces are ignored on diff code pages.
 
+Install
+-----
 ```
-git clone https://github.com/fiahfy/chrome-extension-angular-skeleton.git
-cd chrome-extension-angular-skeleton
+git clone https://github.com/fiahfy/github-diff-enhancer.git
+cd github-diff-enhancer
 ```
+* Open `chrome://extensions/`.
+* Drag & drop `app` directory.
 
-###Install node modules
-
-    npm install
-
-Develop
----------
-
-Add `app` directory to Chrome.  
-Run `watch` task.
-
-```
-grunt watch
-```
-
-Lint changed files with JSHint, and Test with Karma.
-
-Test
----------
-
-Run `test` task.
-
-```
-grunt test
-```
-
-Test with Karma according to the specs.
-
-Build & Release Production
----------
-
-Run `build` task.
-
-```
-grunt build
-```
-
-Created `dist` and archived `dist.zip`.  
-Submit `dist.zip` to Chrome Web Store.
+Credit
+-----
+documents by Pham Thi Dieu Linh from the Noun Project

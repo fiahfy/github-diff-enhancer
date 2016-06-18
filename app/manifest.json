@@ -1,11 +1,14 @@
 {
-  "name": "Github PR Linker",
+  "name": "Github Diff Enhancer",
   "version": "0.0.1",
-  "description": "Attach links at PR pages",
+  "description": "Enhance diff pages on Github",
 
   "manifest_version": 2,
 
   "icons": {
+    "16": "img/icon_16.png",
+    "48": "img/icon_48.png",
+    "128": "img/icon_128.png"
   },
 
   "content_scripts": [
@@ -16,9 +19,5 @@
         "js/content_scripts.js"
       ]
     }
-  ],
-
-  "permissions": [
-    "storage"
   ]
 }

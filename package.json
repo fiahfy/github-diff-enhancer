@@ -1,13 +1,22 @@
 {
-  "name": "github-pr-linker",
+  "name": "github-diff-enhancer",
   "version": "0.0.1",
+  "keywords": [
+    "Chrome Extension",
+    "GitHub"
+  ],
   "author": {
-    "name": "fiahfy"
+    "name": "fiahfy",
+    "email": "d.fiahfy@gmail.com",
+    "url": "http://fiahfy.blogspot.com/"
   },
-  "homepage": "https://github.com/fiahfy/chrome-extension-angular-skeleton",
+  "homepage": "http://fiahfy.blogspot.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fiahfy/chrome-extension-angular-skeleton.git"
+    "url": "https://github.com/fiahfy/github-diff-enhancer"
   },
-  "licenses": "MIT"
+  "private": true,
+  "scripts": {
+    "archive": "zip -r app.zip app"
+  }
 }
