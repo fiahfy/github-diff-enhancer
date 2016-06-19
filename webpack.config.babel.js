@@ -4,10 +4,13 @@ export default {
   debug: debug,
   devtool: debug ? 'cheap-source-map' : 'source-map',
   target: 'web',
-  entry: './src/content_scripts.js',
+  entry: {
+    content_scripts: './src/content_scripts.js',
+    options: './src/options.js'
+  },
   output: {
     path: './app/',
-    filename: 'js/content_scripts.js'
+    filename: 'js/[name].js'
   },
   module: {
     loaders: [
