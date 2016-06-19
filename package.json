@@ -17,6 +17,7 @@
   },
   "private": true,
   "scripts": {
+    "install": "npm run build",
     "watch": "npm run build -- -w",
     "build": "webpack",
     "archive": "DEBUG=0 npm run build; zip -r app.zip app"

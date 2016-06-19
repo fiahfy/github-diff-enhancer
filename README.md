@@ -17,8 +17,9 @@ Install
 ```
 git clone https://github.com/fiahfy/github-diff-enhancer.git
 cd github-diff-enhancer
+npm i
 ```
-* Open `chrome://extensions/`.
+* Open URL `chrome://extensions/` by Google Chrome.
 * Drag & drop `app` directory.
 
 documents by Pham Thi Dieu Linh from the Noun Project
