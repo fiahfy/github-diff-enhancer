@@ -1,7 +1,7 @@
-Github Diff Enhancer
+GitHub Diff Enhancer
 ===========
 
-This application is Chrome Extension for enhancing diff code pages on GitHub.
+This application is Chrome Extension for enhancing compared code pages on GitHub.
 
 Version
 -----
@@ -10,7 +10,7 @@ Version
 Feature
 -----
 * Attach the dropmenu for switching whitespace ignored or not.
-* Attach links for adding comment if whitespaces are ignored on diff code pages.
+* Attach links for adding a comment if white spaces are ignored on compared code pages.
 
 Install
 -----
@@ -21,6 +21,4 @@ cd github-diff-enhancer
 * Open `chrome://extensions/`.
 * Drag & drop `app` directory.
 
-Credit
------
 documents by Pham Thi Dieu Linh from the Noun Project

@@ -1,7 +1,7 @@
 {
-  "name": "Github Diff Enhancer",
-  "version": "0.0.1",
-  "description": "Enhance diff pages on Github",
+  "name": "GitHub Diff Enhancer",
+  "version": "1.0.1",
+  "description": "Enhance compared code pages on GitHub.",
 
   "manifest_version": 2,
 
