@@ -1,6 +1,6 @@
 {
   "name": "GitHub Diff Enhancer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Enhance compared code pages on GitHub.",
 
   "manifest_version": 2,
@@ -21,6 +21,8 @@
     }
   ],
 
+  "options_page": "html/options.html",
+  
   "permissions": [
     "storage"
   ]
