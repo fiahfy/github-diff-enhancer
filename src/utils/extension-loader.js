@@ -1,24 +1,46 @@
-export default class Loader {
-  constructor(version) {
+export default class ExtensionLoader {
+  constructor() {
+    const version = this.detectVersion()
     if (version === '2.2.6') {
-      this.mod = new ModuleV2_2_6()
+      this.module = new ModuleV2_2_6()
       return
     }
-    this.mod = new Module()
+    this.module = new Module()
+  }
+  detectVersion() {
+    const icon = document.querySelector('.site-footer .octicon-mark-github')
+    const title = icon.getAttribute('title') || ''
+    const matches = title.match(/[\d.]+$/)
+    return matches ? matches[0] : null
   }
   load() {
+      this.proceed()
+
+      this.module.observe(() => {
+        this.proceed()
+      })
+  }
+  proceed() {
     const url = new URL(location.href)
     const match = url.pathname.match(/^\/[^\/]+\/[^\/]+\/pull\/\d+\/files/)
     if (!match) {
       return
     }
-
-    this.mod.load()
+    this.module.proceed()
   }
 }
 
 class Module {
-  load() {
+  observe(callback) {
+    const container = document.querySelector('#js-repo-pjax-container')
+    if (!container) {
+      return
+    }
+
+    const observer = new MutationObserver(callback)
+    observer.observe(container, {childList: true})
+  }
+  proceed() {
     this.attachDropdown()
     this.attachLineLinks()
   }
@@ -119,7 +141,18 @@ class Module {
 }
 
 class ModuleV2_2_6 {
-  load() {
+  observe(callback) {
+    const container = document.querySelector('#js-repo-pjax-container')
+    if (!container) {
+      return
+    }
+    console.log('load')
+
+    const observer = new MutationObserver(callback)
+    observer.observe(container, {childList: true})
+    observer.observe(container.querySelector('#discussion_bucket'), {attributes: true})
+  }
+  proceed() {
     this.attachDropdown()
     this.attachLineLinks()
   }
@@ -158,7 +191,7 @@ class ModuleV2_2_6 {
     }).join('')
 
     const html = `
-      <div class="btn-group right" style="margin-left: 10px;">
+      <div class="btn-group right" style="margin-left: 10px;" id="github-diff-enhancer-switch">
         ${optionsHtml}
       </div>
     `

@@ -16,13 +16,13 @@
       "run_at": "document_end",
       "matches": ["<all_urls>"],
       "js": [
-        "js/content_scripts.js"
+        "js/content-scripts.js"
       ]
     }
   ],
 
   "options_page": "html/options.html",
-  
+
   "permissions": [
     "storage"
   ]

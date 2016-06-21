@@ -1,5 +1,5 @@
 import 'babel-polyfill'
-import SyncStorage from './sync-storage'
+import SyncStorage from './utils/sync-storage'
 
 (() => {
   render()
