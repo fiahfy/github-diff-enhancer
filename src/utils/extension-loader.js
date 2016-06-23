@@ -146,7 +146,6 @@ class ModuleV2_2_6 {
     if (!container) {
       return
     }
-    console.log('load')
 
     const observer = new MutationObserver(callback)
     observer.observe(container, {childList: true})
