@@ -5,7 +5,7 @@ export default {
   devtool: debug ? 'cheap-source-map' : 'source-map',
   target: 'web',
   entry: {
-    content_scripts: './src/content_scripts.js',
+    'content-scripts': './src/content-scripts.js',
     options: './src/options.js'
   },
   output: {

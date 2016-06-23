@@ -5,7 +5,7 @@ This application is Chrome Extension for enhancing compared code pages on GitHub
 
 Version
 -----
-1.0.1
+1.0.2
 
 Feature
 -----
